@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Organisation Registration</title>
+    <title>Login</title>
 </head>
 <body>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type='submit'> </input>
+        <input type='submit' value='Login'> </input>
     </form>
 </body>
 </html>

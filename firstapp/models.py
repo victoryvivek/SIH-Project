@@ -13,5 +13,16 @@ class OrganisationInfo(models.Model):
     def __str__(self):
         return self.orgnisation_name
 
+class CapitalistInfo(models.Model):
+    name=models.CharField(max_length=30)
+    username = models.CharField(max_length=30)
+    password = models.CharField(max_length=30)
+    email=models.EmailField( max_length=254)
+    contact_no = models.DecimalField(max_digits=10, decimal_places=0)
+
+    def __str__(self):
+        return self.name
+
+
 
 
